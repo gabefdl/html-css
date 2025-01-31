@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    a {
+        color: red;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    a:hover {
+        color: blue;
+    }
+    a::after {
+        content: ' teste';
+        text-decoration: none;
+        font-weight: normal;
+    }
+    .especial::after {
+        content: '☽';
+    }
+</style>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li>
+            <a href="https://www.instagram.com/hellosobral/" target="_blank" rel="instagram">Instagram da <span class="especial">minha mulher</span></a>
+        </li>
+    </ul>
+</body>
+</html>
