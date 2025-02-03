@@ -8,6 +8,22 @@
     padding: 0px;
 
 }
+h1, p {
+    animation-duration: 1s;
+    animation-name: slide-in;
+  }
+  
+  @keyframes slide-in {
+    from {
+      translate: 100vw 0;
+      scale: 100% ;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
 html, body {
     min-height: 100vh;
     background-color: rgb(161, 161, 161);
@@ -84,6 +100,7 @@ main p {
     background-image: url('imagens/background002.jpg');
     background-position: center center;
     background-attachment: fixed;
+
   
 }
 
