@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Testando mais formulários</h1>
+    <form action="" method="post">
+
+        <fieldset>
+            <legend>Esportes</legend>
+        <input type="checkbox" name="basq" id="basq">
+        <label for="basq">Basquete</label> <br>
+
+        <input type="checkbox" name="fut" id="fut">
+        <label for="fut">Futebol</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sex" id="sex">
+            <label for="sex">Masculino</label>
+            <input type="radio" name="sex" id="sex" checked>
+            <label for="sex">Feminino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Estado</legend>
+            <select name="est" id="est">
+
+                <option value="" selected>--Escolha--</option>
+                <optgroup label="Norte">
+                    <option value="RO">Rondônia</option>
+                    <option value="AC">Acre</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="PA">Pará</option>
+                    <option value="RR">Roraima</option>
+                </optgroup>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend><label for="prof">Profissão</label></legend>
+            <input type="text" name="prof" id="prof" list="listaprof">
+            <datalist id="listaprof">
+                <option value="ADM">Administração</option>
+                <option value="ENG">Engenharia</option>
+            </datalist>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados</legend>
+            <label for="inome">Nome:</label>
+            <input type="text" name="inome" id="inome"> 
+            <br> <br>
+            <label for="iemail">Email:</label>
+            <input type="email" name="iemail" id="iemail">
+            <br> <br>
+            <label for="itel">Telefone</label>
+            <input type="tel" name="itel" id="itel">
+
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Mais</legend>
+            <label for="icor">Sua cor fav:</label>
+            <input type="color" name="cor" id="icor">
+            <br><br>
+            <label for="ifoto">Sua foto</label>
+            <input type="file" name="ifoto" id="ifoto">
+
+        </fieldset>
+
+        <label for="msg">Deixa sua mensagem:</label> <br>
+        <textarea name="msg" id="msg" cols="30" rows="10">
+            
+        </textarea>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
