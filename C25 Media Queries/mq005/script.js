@@ -6,3 +6,9 @@ function clickMenu () {
     }
 
      }
+
+     function mudeiTamanho() {
+        if (window.innerWidth >= 768) {
+            itens.style.display = 'block'
+        } 
+     }
