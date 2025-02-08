@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@media screen  and (min-width: 768px) {
+    header {
+        height: 90px;
+    }    
+    div.title {
+            justify-content: flex-start;
+            margin-left: 5px;
+        }
+
+        ul {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            width: 97vw;
+        }
+
+        li {
+            padding-right: 5px;
+           
+        }
+        main {
+            max-width: 768px;
+        }
+}
+
+
+@media screen and (min-width: 992px) {
+    header {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;   
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    ul {
+        display: inline;
+        
+       
+    }
+}
