@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style> 
+
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+    section {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: [col1-start] 50% [col1-end col2-start] 50% [col2-end];
+        grid-template-rows: [row] 25vh [row] 50vh [row] auto;
+    }
+
+    .item1 {
+        grid-column-start: col1-start;
+        grid-column-end: col2-end;
+        grid-row-start: row 1;
+    }
+
+    .item2 {
+        grid-column-start: col1-start;
+        grid-column-end: col2-start;
+    }
+
+    .item4 {
+        grid-column-start: col1-start;
+        grid-column-end: col2-end;
+        grid-row-start: row 3;
+    }
+
+    div {
+        font-size: 30px;
+        font-weight: 500;
+        padding: 20px;
+        border: 1px solid black;
+    }
+</style>
+<body>
+    
+    <section>
+        <div class="item1">NAVEGAÇÃO</div>
+        <div class="item2">ARTIGO ESQUERDA</div>
+        <div class="item3">ARTIGO DIREITA</div>
+        <div class="item4">RODAPÉ</div>
+    </section>
+</body>
+</html>

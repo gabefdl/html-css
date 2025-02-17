@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        color: white;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+
+    }
+    section {
+        display: grid;
+        height: 100vh;
+        grid-template:
+        [row1-start] "header header header header" 10vh [row1-end]
+        [row2-start] "article1 article2 article3 aside" 15vh [row2-end]
+        [row3-start] "article4 article4 article4 aside" auto [row3-end]
+        [row4-start] "footer footer footer footer" 8vh [row4-end]
+        / 27vw 27vw 27vw auto ;
+        gap: 5px;
+    }
+
+    header {
+        grid-area: header;
+        display: grid;
+        grid-template-areas: "head img";
+        grid-template-columns: 85vw auto;
+        background-color: rgb(57, 29, 57);
+        padding: 20px;
+        align-content: center;
+    }
+
+    .img {
+        background-color: blueviolet;
+        text-align: center;
+        height: 40px;
+    }
+
+    article {
+        grid-area: article1;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        background-color: rgb(22, 0, 82);
+        padding: 20px;
+    }
+
+    .text2 {
+        grid-area: article2;
+        background-color: rgb(73, 31, 140);
+    }
+
+    .text3 {
+        grid-area: article3;
+        background-color: rgb(59, 93, 218);
+    }
+
+    .dois {
+        grid-area: article4;
+        background-color: rgb(27, 8, 228);
+    }
+
+    aside {
+        grid-area: aside;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        background-color: rgb(8, 53, 143);
+        padding: 20px;
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: rgb(57, 29, 57); 
+        padding: 20px;
+    }
+</style>
+<body>
+    <section>
+        <header> header
+            <div class="img">img</div>
+        </header>
+
+        <article class="text1">
+            text
+        </article>
+
+        <article class="text2">
+            text
+        </article>
+
+        <article class="text3">
+            text
+        </article>
+
+        <article class="dois">
+            content
+        </article>
+
+        <aside>
+            aside
+        </aside>
+        <footer>
+            footer
+        </footer>
+    </section>
+
+
+</body>
+</html>
